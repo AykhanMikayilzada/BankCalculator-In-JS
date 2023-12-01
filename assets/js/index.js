@@ -26,7 +26,7 @@ const fullDate = `${day}.${month}.${year}`;
 const name = prompt("Zəhmət Olmasa Adınızı Qeyd Edin:");
 title.innerText =
   name != ""
-    ? `Salam ${name} Bank Kalkulyatoruna Xoş Gəlmisiniz!`
+    ? `Salam ${name}, Bank Kalkulyatoruna Xoş Gəlmisiniz!`
     : `Bank Kalkulyatoruna Xoş Gəlmisiniz!`;
 
 let myObject = [
@@ -53,9 +53,8 @@ increaseBalance.addEventListener("click", () => {
         input.value = "";
         alert("Siz maksimum 10.000 - a qədər balans artımı edə bilərsiniz");
       } else {
-        let newBalance = item.balance + +inputValue;
-        item.balance += newBalance;
         item.type = "Mədaxil";
+        item.balance += +inputValue;
         input.value = "";
       }
     })
@@ -76,9 +75,8 @@ withdrawMoney.addEventListener("click", () => {
         input.value = "";
         alert("Balansda kifayət qədər məbləğ yoxdur");
       } else {
-        let newBalance = item.balance - +inputValue;
-        item.balance = newBalance;
         item.type = "Məxaric";
+        item.balance -= +inputValue;
         input.value = "";
       }
     })
