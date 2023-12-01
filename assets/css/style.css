@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #ffc628;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-bottom: 30px;
+  gap: 60px;
+  width: 100%;
+}
+main .container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+main .container p {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffc628;
+}
+main .container input {
+  margin: auto;
+  max-width: 250px;
+}
+main .container .buttons {
+  display: flex;
+  gap: 15px;
+}
+main .container .buttons button {
+  transform: skew(-14deg, 0);
+  transition-duration: 0.7s;
+  background: #ffc628;
+  border: none;
+  display: block;
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+main .container .buttons button:hover {
+  transform: skew(-14deg, 0);
+  transition-duration: 0.7s;
+  background: white;
+  border: none;
+  display: block;
+  width: 150px;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
